@@ -1,8 +1,332 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Ddo</title>
+<title>Ddo - Web Developer</title>
+<!-- META TAGS  -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=1024" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<!-- CSS FILES  -->
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/jscrollpane.css" rel="stylesheet" type="text/css" />
+<link href="css/lightbox.css" rel="stylesheet" type="text/css" />
+<!--[if lt IE 9]> 
+<style type="text/css">
+.ff-container{margin-top:-20px;}
+.ff-items a span {display:none;}
+.ff-items a:hover span {display:block;background-color:#b72228;width:120px;height:80px;}
+.ie8 {display:none;}
+.label{border:none; padding-left:15px;}
+</style>
+<![endif]-->
 </head>
-<body>
-    <h1>Ddo</h1>
+<body onLoad="load()" class="impress-not-supported">
+<!-- OVRVIEW BUTTON  -->
+<a href="#overview" class="overview-button"><img src="images/overview.png" alt="" /></a>
+<!-- NAVIGATION  -->
+<ul id="navigation">
+  <li><a href="#home"><img src="images/home.png" alt="" /><span>Home</span></a></li>
+  <li><a href="#about"><img src="images/about.png" alt="" /><span>About</span></a></li>
+  <li><a href="#resume"><img src="images/resume.png" alt="" /><span>Resume</span></a></li>
+  <li><a href="#skills"><img src="images/skills.png" alt="" /><span>Skills</span></a></li>
+  <li><a href="#skillsdetail"><img src="images/skills.png" alt="" /><span>Details</span></a></li>
+  <li><a href="#software"><img src="images/software.png" alt="" /><span>Software</span></a></li>
+  <!-- <li><a href="#portfolio"><img src="images/portfolio.png" alt="" /><span>Portfolio</span></a></li> -->
+  <li><a href="#contact"><img src="images/contact.png" alt="" /><span>Contact</span></a></li>
+</ul>
+<!-- FALLBACK MESSAGE FOR OLDER BROWSERS  -->
+<div class="fallback-message">
+  <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this website.</p>
+  <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+<div id="impress">
+<!-- HOMEPAGE  -->
+  <div id="home" class="step" data-x="950" data-y="-700" data-scale="6">
+    <div class="home-grid">
+    <!-- SLIDER  -->
+      <div class="slider-wrapper theme-default box effect">
+        <div id="slider" class="nivoSlider"> 
+        <img src="images/1.jpg" alt="" /> 
+        <img src="images/4.jpg" alt="" /> 
+        <!-- <img src="images/2.jpg" alt="" /> 
+        <img src="images/3.jpg" alt="" /> -->
+        </div>
+      </div>
+    </div>
+    <div class="home-grid">
+        
+        <h4>Hi, I do things on the internet.</h4>
+        <h5 style="text-align:right">- Ddo</h5>
+      <ul class="icons">
+        <li></li>
+        <!-- <li><a target='_blank' href="http://www.facebook.com/joeddo"><img class="icon" src="images/social-icons/facebook.png" alt="Facebook" /></a></li> -->
+        <!-- <li><a target='_blank' href="http://vn.linkedin.com/pub/joe-ddo/40/35a/778"><img class="icon" src="images/social-icons/linkedin.png" alt="Linked In" /></a></li> -->
+        <!-- <li><a target='_blank' href="#"><img class="icon" src="images/social-icons/gmail.png" alt="Gmail" /></a></li> -->
+        <!-- <li><a target='_blank' href="skype:joe_ddo"><img class="icon" src="images/social-icons/skype.png" alt="Skype" /></a></li> -->
+        <!-- <li><a target='_blank' href="#"><img class="icon" src="images/social-icons/yahoo.png" alt="Yahoo" /></a></li> -->
+      </ul>
+    </div>
+  </div>
+  <!-- ABOUT ME  -->
+  <div id="about" class="step" data-x="-600" data-y="3000" data-z="-1000" data-rotate="90" data-scale="4">
+    <div id="about-scroll" class="jp-container about-panel">
+      <h2>About Me</h2>
+      <p>
+      Hi guys,<br />
+      My name is Vinh but I usually use the "Ddo" or "Joe Ddo" nicknames to do stuffs on the internet.<br />
+      The first time I coded is when I was in 11th grade(2005) with Pascal.
+      But then I focused on Web development, I dived in HTML, CSS, PHP, Javascript and then CMS like <a target='_blank' href="http://wordpress.org/">Wordpress</a>, <a target='_blank' href="http://ellislab.com/codeigniter">CodeIgniter</a> Framework...<br />
+      At work, I develop <a target='_blank' href="http://developers.facebook.com/">Facebook Apps</a>, CRM(Customer relationship management - <a target='_blank' href="https://www.vtiger.com/crm/">vTiger</a>) and make it interact with another systems as website, email marketing system...
+      I'm also a big fan of <a target='_blank' href="http://en.wikipedia.org/wiki/Single-page_application">Single-page application</a>(web apps).<br />
+      Beside that I created some Google Extensions and over 10 facebook apps.<br />Some of that are freelance projects and the rest I published for free.<br />
+      <a target='_blank' href='https://chrome.google.com/webstore/detail/ddict-quick-dictionary/bpggmmljdiliancllaapiggllnkbjocb'>Ddict</a> is a Quick Dictionary Extension with over 2000 users daily.<br />
+      </p>
+      <div class="about-grid-left">
+        <p><span class="label">NAME:</span>Nguyễn Dương Xuân Vinh</p>
+        <p><span class="label">DOB:</span>1989</p>
+        <p><span class="label">BIRTH PLACE:</span>Hồ Chí Minh City</p>
+      </div>
+      <div class="about-grid-right">
+        <p><span class="label">E-MAIL:</span><span class='cufon'>J%o%e%d%d%%o8%%%9@g%%m%%a%%i%l%.%c%o%%m</span></p>
+        <p><span class="label">PHONE:</span><span class='cufon'>+8%4% %938%%8%7%%1%50%%%7</span></p>
+        <p><span class="label">FREELANCE:</span>Available</p>
+      </div>
+    </div>
+  </div>
+  <!-- RESUME  -->
+  <div id="resume" class="step" data-x="2800" data-y="2700" data-rotate="180" data-scale="5">
+    <div id="resume-scroll" class="jp-container resume-panel">
+      <h2>Experience</h2>
+      <div class="resume">
+        <p class="first"><span class="place">Freelancer</span><span class="time">2010 to present</span></p>
+        <p class="second">Choose a job you love, and you will never have to work a day in your life. - Confucius</p>
+      </div>
+      <div class="resume">
+        <p class="first"><span class="place">Senior Developer - Nguồn Việt Software</span><span class="time">2012 to 2013</span></p>
+        <p class="second">Nguon Viet did software outsourcing for some companies in Vietnam and US. They also expand their services from software development to enterprise solutions, online solutions and training & consulting in IT.
+        </p>
+      </div>
+      <!-- 
+      <h2>Education</h2>
+      <div class="resume">
+        <p class="first"><span class="place">The University of Texas</span><span class="time">1997-2002</span></p>
+        <p class="second">Lorem ipsum dolor sit amet, habitasse pretium dolor sociiss. Nulla preti facilisis interdum elit amet erat, consectetuer ant condimentum eaquemea ante maecenas.</p>
+      </div>
+      <div class="resume">
+        <p class="first"><span class="place">Institue of Design</span><span class="time">1994-1997</span></p>
+        <p class="second">Lorem ipsum dolor sit amet, habitasse pretium dolor sociiss. Nulla preti facilisis interdum elit amet erat, consectetuer ant condimentum eaquemea ante maecenas.</p>
+      </div> -->
+    </div>
+  </div>
+  <!-- SKILLS  -->
+  <div id="skills" class="step" data-x="5800" data-y="-1700" data-z="-3000" data-rotate="300" data-scale="3">
+    <h2>Skills</h2>
+    <div class="legend">
+      <div class="skills">
+        <ul>
+          <li class="jq">Node.js</li>
+          <li class="css">JavaScript/HTML/CSS</li>
+          <li class="php">PHP/MySQL</li>
+          <li class="vt">IAAS/PAAS</li>
+          <li class="fb">Social&nbsp;Platforms</li>
+          <li class="gg">Payment&nbsp;Platforms</li>
+          <li class="sql">CRM</li>
+          <li class="jq">Frameworks</li>
+          <li class="gg">Libraries</li>
+        </ul>
+       
+      </div>
+    </div>
+    <div id="diagram"></div>
+    <div class="get">
+      <div class="arc"> <span class="text">Node.js</span>
+        <input type="hidden" class="percent" value="95" />
+        <input type="hidden" class="color" value="#b72228" />
+      </div>
+      <div class="arc"> <span class="text">JavaScript/HTML/CSS</span>
+        <input type="hidden" class="percent" value="80" />
+        <input type="hidden" class="color" value="#6286a8" />
+      </div>
+      <div class="arc"> <span class="text">PHP/MySQL</span>
+        <input type="hidden" class="percent" value="95" />
+        <input type="hidden" class="color" value="#BEDBE9" />
+      </div>
+      <div class="arc"> <span class="text">IAAS/PAAS</span>
+        <input type="hidden" class="percent" value="80" />
+        <input type="hidden" class="color" value="#52AA22" />
+      </div>
+      <div class="arc"> <span class="text">Social&nbsp;Platforms</span>
+        <input type="hidden" class="percent" value="85" />
+        <input type="hidden" class="color" value="#3d4e7e" />
+      </div>
+      <div class="arc"> <span class="text">Payment&nbsp;Platforms</span>
+        <input type="hidden" class="percent" value="80" />
+        <input type="hidden" class="color" value="#357ae8" />
+      </div>
+      <!-- <div class="arc"> <span class="text">CRM</span>
+        <input type="hidden" class="percent" value="95" />
+        <input type="hidden" class="color" value="#52AA22" />
+      </div>
+      <div class="arc"> <span class="text">Frameworks</span>
+        <input type="hidden" class="percent" value="85" />
+        <input type="hidden" class="color" value="#357ae8" />
+      </div>
+       <div class="arc"> <span class="text">Libraries</span>
+        <input type="hidden" class="percent" value="85" />
+        <input type="hidden" class="color" value="#357ae8" />
+      </div> -->
+    </div>
+  </div>
+
+  <div id="skillsdetail" class="step" data-x="8500" data-y="-7100" data-z="-300" data-rotate="300" data-scale="3">
+    <h2>More Details</h2>
+    <div class="software">
+      <ul class='left'>
+        <li class='ubuntu'>IAAS: Amazon Web Services (AWS), Google Compute Engine, Microsoft Azure</li>
+        <li class='ubuntu'>PAAS: Heroku, Appfog, OpenShift (Red Hat Cloud), Notejitsu, Google App Engine...</li>
+        <li class='ubuntu'>Social Platform: Facebook, Twitter...</li>
+        <li class='ubuntu'>Payment Platforms: Paypal, Stripe...</li>
+        <li class='ubuntu'>Framework: Express, Sails, CodeIgniter...</li>
+        <li class='ubuntu'>Library: jQuery, Underscore, Lowdash...</li>
+        <li class='ubuntu'>CMS: Wordpress, Drupal</li>
+        <li class='ubuntu'>CRM: vTiger, SugarCRM</li>
+        <li class='ubuntu'> Other: Google Extension, vTiger (CRM)...</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="software" class="step" data-x="800" data-y="-1700" data-z="-5000" data-rotate="50" data-scale="3">
+    
+    <h2>Softwares</h2>
+    <div class="software">
+      <ul class='left'>
+        <li class='sbl'>Sublime Text/Notepad++</li>
+        <li class='lampp'>Mamp/Xamp/Lamp</li>
+        <li class='git'>Git/Svn</li>
+        <li class='ubuntu'>Mac OSX/Ubuntu/Windows</li>
+        <li class='mysql'>Sequel Pro/MySQL Workbench</li>
+      </ul>
+      <ul class='right'>
+        <li class='xampp'>SourceTree</li>
+        <li class='svn'>Transit/Filezilla</li>
+        <li class='notepadpls'>iTerm2/Terminal</li>
+        <li class='office'>MS Office</li>
+        <li class='windows'>Chrome</li>
+      </ul>
+    </div>
+  </div>
+  <!-- PORTFOLIO  -->
+  <!-- <div id="portfolio" class="step" data-x="6800" data-y="250" data-rotate="290" data-scale="2">
+    <div id="portfolio-scroll" class="jp-container portfolio-panel">
+      <h2>Portfolio</h2>
+      <div class="ff-container">
+        <input id="select-type-all" name="radio-set-1" type="radio" class="ff-selector-type-all ie8" checked="checked" />
+        <label for="select-type-all" class="ff-label-type-all ie8">All</label>
+        <input id="select-type-1" name="radio-set-1" type="radio" class="ff-selector-type-1 ie8" />
+        <label for="select-type-1" class="ff-label-type-1 ie8">Web Design</label>
+        <input id="select-type-2" name="radio-set-1" type="radio" class="ff-selector-type-2 ie8" />
+        <label for="select-type-2" class="ff-label-type-2 ie8">Illustration</label>
+        <input id="select-type-3" name="radio-set-1" type="radio" class="ff-selector-type-3 ie8" />
+        <label for="select-type-3" class="ff-label-type-3 ie8">Icon Design</label>
+        <div class="clr"></div>
+        <ul class="ff-items">
+          <li class="ff-item-type-2"> <a data-rel="lightbox[project1]" href="images/portfolio/2-1.jpg"> <span>image title</span> <img src="images/portfolio/2-1-thumb.jpg" alt="" /> </a> </li>
+          <li class="ff-item-type-1"> <a data-rel="lightbox[project1]" href="images/portfolio/1-1.jpg"> <span>image title</span> <img src="images/portfolio/1-1-thumb.jpg" alt="" /> </a> </li>
+          <li class="ff-item-type-1"> <a data-rel="lightbox[project1]" href="images/portfolio/1-2.jpg"> <span>image title</span> <img src="images/portfolio/1-2-thumb.jpg" alt="" /> </a> </li>
+          <li class="ff-item-type-2"> <a data-rel="lightbox[project1]" href="images/portfolio/2-2.jpg"> <span>image title</span> <img src="images/portfolio/2-2-thumb.jpg" alt="" /> </a> </li>
+          <li class="ff-item-type-3"> <a data-rel="lightbox[project1]" href="images/portfolio/3-1.jpg"> <span>image title</span> <img src="images/portfolio/3-1-thumb.jpg" alt="" /> </a> </li>
+          <li class="ff-item-type-1"> <a data-rel="lightbox[project1]" href="images/portfolio/1-3.jpg"> <span>image title</span> <img src="images/portfolio/1-3-thumb.jpg" alt="" /> </a> </li>
+          <li class="ff-item-type-3"> <a data-rel="lightbox[project1]" href="images/portfolio/3-2.jpg"> <span>image title</span> <img src="images/portfolio/3-2-thumb.jpg" alt="" /> </a> </li>
+          <li class="ff-item-type-1"> <a data-rel="lightbox[project1]" href="images/portfolio/4-1.jpg"> <span>image title</span> <img src="images/portfolio/4-1-thumb.jpg" alt="" /> </a> </li>
+          <li class="ff-item-type-2"> <a data-rel="lightbox[project1]" href="images/portfolio/2-3.jpg"> <span>image title</span> <img src="images/portfolio/2-3-thumb.jpg" alt="" /> </a> </li>
+          <li class="ff-item-type-2"> <a data-rel="lightbox[project1]" href="images/portfolio/5-1.jpg"> <span>image title</span> <img src="images/portfolio/5-1-thumb.jpg" alt="" /> </a> </li>
+          <li class="ff-item-type-1"> <a data-rel="lightbox[project1]" href="images/portfolio/4-2.jpg"> <span>image title</span> <img src="images/portfolio/4-2-thumb.jpg" alt="" /> </a> </li>
+          <li class="ff-item-type-1"> <a data-rel="lightbox[project1]" href="images/portfolio/4-3.jpg"> <span>image title</span> <img src="images/portfolio/4-3-thumb.jpg" alt="" /> </a> </li>
+        </ul>
+      </div>
+    </div>
+  </div> -->
+  <!-- CONTACT  -->
+  <div id="contact" class="step" data-x="6700" data-y="3000" data-z="-1000" data-rotate="340" data-scale="3">
+    <div class="map-effect"><div id="map" class="map"></div></div>
+    <div class="contact-left">
+      <h5>Contact Information</h5>
+      <p><span class="label">Address:</span>Hồ Chí Minh City, Việt Nam.</p>
+      <p><span class="label">Phone:</span><span class="cufon">+8%%4%% %93%%%8%8%7%%1%%%%5%0%%7</span></p>
+      <p><span class="label">E-mail:</span><span class="cufon">%J%o%%%ed%%d%%%o8%%9%@g%%%m%a%%i%%l.co%%m</span></p>
+    </div>
+    <!-- <div class="contact-right">
+      <h5>Contact Form</h5>
+      <form id="contactForm" action="http://aboutme.web-sitesi-tasarimi.net/processForm.php" method="post">
+        <div class="contact-form">
+          <input type="text" name="senderName" id="senderName" required="required" maxlength="40" placeholder="Name" />
+          <input type="email" name="senderEmail" id="senderEmail" required="required" maxlength="50" placeholder="E-Mail"  />
+          <textarea name="message" id="message" required="required" placeholder="Message" ></textarea>
+          <input type="submit" id="sendMessage" name="sendMessage" class="button" value="Send Message" />
+        </div>
+      </form>
+      <div id="sendingMessage" class="statusMessage">
+        <p>Sending your message. Please wait...</p>
+      </div>
+      <div id="successMessage" class="statusMessage">
+        <p>Thanks for sending your message! I'll get back to you shortly.</p>
+      </div>
+      <div id="failureMessage" class="statusMessage">
+        <p>There was a problem sending your message. Please try again.</p>
+      </div>
+      <div id="incompleteMessage" class="statusMessage">
+        <p>Please complete all the fields in the form before sending.</p>
+      </div>
+    </div> -->
+  </div>
+  <!-- CREDITS  -->
+  <div id="credits" class="step" data-x="6700" data-y="6500" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="1">
+    <p><span class="t1">Thank</span> <span class="t2">you</span> <span class="t1">for visiting my</span> <span class="t3">website.</span> <br />
+      <span class="t4">I look forward to</span> <b>hearing from you <sup>soon</sup> </b>!</p>
+    <span class="footnote">Ddo - Professional Web Developer.</span> </div>
+  <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10"> </div>
+</div>
+<!-- HINT  -->
+<div class="hint"> <span>You can use a spacebar or arrow keys to navigate</span> </div>
+
+<!-- JS FILES  -->
+<script src="js/jquery.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/impress.js"></script>
+<script src="js/jquery.nivo.slider.js" type="text/javascript"></script>
+<script src="js/jquery.jscrollpane.min.js" type="text/javascript"></script>
+<script src="js/raphael.js" type="text/javascript"></script>
+<script src="js/init.js" type="text/javascript"></script>
+<script src="js/lightbox.js" type="text/javascript"></script>
+<script src="js/scroll-startstop.events.jquery.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="js/custom.js" type="text/javascript"></script>
+<script src="js/cufon.js" type="text/javascript"></script>
+<script src="js/font.js" type="text/javascript"></script>
+<script type="text/javascript">impress().init();</script>
+
+
+<script type="text/javascript">
+  impress().init();
+  // Ddo encode my persional detail
+  $('.cufon').each(function() {
+    $(this).text($(this).text().split('%').join(''));
+  });
+  Cufon.replace('.cufon');
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-24951846-3']);
+  _gaq.push(['_setDomainName', 'joeddo.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 </body>
 </html>
