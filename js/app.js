@@ -2,7 +2,7 @@ $(function() {
 
     //386
     _386 = {
-        speedFactor: 0.1
+        speedFactor: 0.5
     };
 
     //email
